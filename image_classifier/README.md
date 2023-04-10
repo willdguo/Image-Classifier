@@ -1,3 +1,13 @@
+# Image-Classifier
+
+Website link: https://willdguo.github.io/Image-Classifier/
+
+Hugging Face Space link: https://huggingface.co/spaces/willdguo/fastai_l2
+
+Model trained using search_ddg_images across keywords 'barn owl face' and 'apple cut in half'
+
+# ----------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
