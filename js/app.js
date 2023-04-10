@@ -14,6 +14,7 @@ function read() {
     reader.readAsDataURL(image_file.files[0]);
 }
 
-
-const image_file = document.getElementById('image_file')
-image_file.addEventListener('input', read) 
+window.onload = function(){
+    const image_file = document.getElementById('image_file')
+    image_file.addEventListener('input', read) 
+}
