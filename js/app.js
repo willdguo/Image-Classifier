@@ -6,7 +6,8 @@ async function loaded(reader) {
 
     const json = await response.json();
     const label = json['data'][0]['confidences'][0]['label'];
-    const conf = json['data'][0]['confidences']
+    const conf = json['data'][0]['confidences'][0]['confidence']
+    // console.log(conf)
     document.getElementById('results').innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label} with confidence ${conf}%</p>`
 }
 
