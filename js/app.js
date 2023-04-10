@@ -3,9 +3,11 @@ async function loaded(reader) {
     method: "POST", body: JSON.stringify({ "data": [reader.result] }),
     headers: { "Content-Type": "application/json" }
     });
+
     const json = await response.json();
     const label = json['data'][0]['confidences'][0]['label'];
-    document.getElementById('results').innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label}</p>`
+    const conf = json['data'][0]['confidences']
+    document.getElementById('results').innerHTML = `<br/><img src="${reader.result}" width="300"> <p>${label} with confidence ${conf}%</p>`
 }
 
 function read() {
