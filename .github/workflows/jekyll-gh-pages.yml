@@ -1,0 +1,9 @@
+remote_theme: daviddarnes/alembic@main
+plugins:
+- jekyll-remote-theme
+
+title: Apple or Owl?
+description: Basic classification API
+
+author:
+  name: William Guo
